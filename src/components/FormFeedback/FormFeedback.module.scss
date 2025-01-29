@@ -53,6 +53,10 @@
         @include lato400;
         font-size: 24px;
         color: #FFF;
+        transition: .4s;
 
+        &:hover {
+            background: #6489e6;
+        }
     }
 }

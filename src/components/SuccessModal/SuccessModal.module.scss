@@ -1,5 +1,5 @@
-@import '../../../SCSS/mixins';
-@import '../../../SCSS/vars';
+@import '../../SCSS/mixins';
+@import '../../SCSS/vars';
 
 .wrapper {
     width: 100%;
@@ -8,19 +8,18 @@
     z-index: 1000;
     top: 0;
     left: 0;
-    background-color: #ffffffb4;
+    background-color: #d0f1fcb4;
     display: flex;
     align-items: center;
     justify-content: center;
 
     & p {
         @include playfair400;
-        font-size: 22px;
+        font-size: 30px;
         text-align: center;
-        width: 420px;
+        width: 520px;
         line-height: 28px;
         letter-spacing: 1px;
-        background-color: #fff;
         color: $font_color;
         padding: 10px;
     }
