@@ -1,0 +1,22 @@
+@import '../../SCSS/vars';
+@import '../../SCSS/mixins';
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+    & p {
+        @include lato400;
+        font-size: 16px;
+        color: $font_color_trans;
+        text-align: center;
+
+        @include mobileL {
+            width: 90%;
+            font-size: 14px;
+        }
+    }
+}

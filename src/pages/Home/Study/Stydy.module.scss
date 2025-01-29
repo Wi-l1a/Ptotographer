@@ -1,0 +1,86 @@
+@import '../../../SCSS/vars';
+@import '../../../SCSS/mixins';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 100px 0;
+
+    @include tablet {
+        flex-direction: column-reverse;
+    }
+
+    @include mobileL {
+        padding: 50px 0;
+
+    }
+
+    & .img {
+        flex: 0 1 40%;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @include tablet {
+            flex: none;
+            width: 100%;
+            height: 200px;
+        }
+
+        @include mobileL {
+            height: 150px;
+        }
+    }
+
+    & .content {
+        flex: 0 1 50%;
+
+        & h2 {
+            margin-bottom: 65px;
+        }
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            @include mobileL {
+                gap: 30px;
+
+            }
+
+            & li {
+                color: $font_color_trans;
+                @include lato300;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                line-height: 30px;
+
+                @include mobileL {
+                    font-size: 16px;
+                }
+
+                & span {
+                    width: 50px;
+                    height: 50px;
+                    padding: 20px 20px 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #F6F8FE;
+                    border-radius: 50%;
+                    border: 1px solid #ECECEC;
+                    font-size: 25px;
+                    font-family: "Old Standard TT", serif;
+                }
+            }
+        }
+    }
+}

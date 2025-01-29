@@ -1,0 +1,85 @@
+@mixin lato300 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+@mixin lato400 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+@mixin lato500 {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+}
+
+@mixin lato600 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+@mixin lato700 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+@mixin playfair400 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+}
+
+@mixin playfair500 {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+}
+
+@mixin playfair600 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-optical-sizing: auto;
+}
+
+@mixin playfair700 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-optical-sizing: auto;
+}
+
+
+@mixin oldMonitor {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin old1024 {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin mobileL {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin mobileM {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mobileS {
+    @media screen and (max-width: 430px) {
+        @content;
+    }
+}

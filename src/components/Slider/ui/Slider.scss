@@ -1,0 +1,22 @@
+@import '../../../SCSS/vars';
+@import '../../../SCSS/mixins';
+
+.review-swiper-button-prev,
+.review-swiper-button-next {
+    background: #47667B;
+    transition: .3s;
+
+    & svg {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.swiper-button-disabled {
+    opacity: .5;
+
+}
+
+.swiper-pagination-total {
+    color: #222;
+
+}

@@ -1,0 +1,57 @@
+@import '../../../SCSS/vars';
+@import '../../../SCSS/mixins';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    & .customs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        & .customPagination {
+            color: #222;
+            @include lato400;
+            font-size: 18px;
+            position: relative;
+            bottom: 0;
+            z-index: 1;
+            width: 70px;
+        }
+
+        & .customButtonPrev {
+            transform: rotate(180deg);
+        }
+
+        & .customButtonNext,
+        .customButtonPrev {
+            width: 45px;
+            padding: 8px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            @include mobileL {
+                width: 40px;
+            }
+
+            & svg {
+                width: 20px;
+            }
+        }
+
+        @include mobileL {
+            gap: 0px;
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+}

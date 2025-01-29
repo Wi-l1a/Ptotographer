@@ -1,0 +1,62 @@
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import './SCSS/mixins';
+@import './SCSS/vars';
+//  font-family: "Old Standard TT", serif;
+//  font-family: "Lato", sans-serif;
+
+// font-family: "Playfair Display", serif;
+// font-optical-sizing: auto; 
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+
+  @include mobileL {
+    max-width: 92%;
+  }
+}
+
+@import './SCSS/mixins';
+@import './SCSS/vars';
+
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1921px) {
+    max-width: 1740px;
+  }
+
+  @include mobileL {
+    max-width: 92%;
+  }
+}
+
+
+main {
+  min-height: 70vh;
+}
+
+
+
+.title {
+  @include playfair400;
+  font-size: 60px;
+  line-height: 120%;
+  color: $font_color;
+
+  @include oldMonitor {
+    font-size: 40px;
+  }
+
+  @include tablet {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  @include mobileL {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../../SCSS/mixins';
+@import '../../../SCSS/vars';
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #ffffffb4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & p {
+        @include playfair400;
+        font-size: 22px;
+        text-align: center;
+        width: 420px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        background-color: #fff;
+        color: $font_color;
+        padding: 10px;
+    }
+}

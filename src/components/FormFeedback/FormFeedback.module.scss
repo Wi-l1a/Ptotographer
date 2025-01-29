@@ -1,0 +1,58 @@
+@import '../../SCSS/vars';
+@import '../../SCSS/mixins';
+
+.form {
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 40px 30px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    @include tablet {
+        gap: 20px;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    &>textarea,
+    &>input {
+        resize: none;
+        width: 100%;
+        min-width: 400px;
+        background: #FFF;
+        border: 1px solid #C5C5C5;
+        color: $font_color;
+        padding: 20px;
+        @include lato300;
+        font-size: 20px;
+
+        &::placeholder {
+            @include lato400;
+            font-size: 20px;
+            color: #6863638e;
+
+            @include tablet {
+                font-size: 16px;
+            }
+        }
+
+        @include tablet {
+            font-size: 16px;
+            padding: 15px;
+            min-width: 100%;
+        }
+    }
+
+
+    & button {
+        padding: 15px;
+        background: #98A9D4;
+        width: 100%;
+        @include lato400;
+        font-size: 24px;
+        color: #FFF;
+
+    }
+}
