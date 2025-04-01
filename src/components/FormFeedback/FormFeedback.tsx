@@ -11,8 +11,8 @@ const FormFeedback = () => {
         message: ''
     });
     const [isSuccess, setIsSuccess] = useState(false);
-    const botToken = '7880118105:AAGNoyg0OjmLrsYCEqtQQru1C7dLNkoTcno';
-    const chatId = '7069409257';
+    const botToken = '';
+    const chatId = '';
 
     const handleChange = (e: { target: { id: any; value: any; }; }) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });
